@@ -1,0 +1,201 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #edeff0;
+}
+header{
+    background-color: white;
+}
+header a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+header #logo{
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+header nav li{
+    display: inline-block;
+}
+
+header nav a{
+    transition: background-color 0.4s;
+}
+header nav a:hover{
+    background-color: rgba(0,0,0,.1);
+}
+header .active{
+    background-color: rgba(0,0,0,.1);
+}
+/* *** header*/
+
+#showcase{
+    height: 250px;
+    background-image: url(../Images/pexels.jpg);
+    background-size: cover;
+    position: relative;
+}
+#showcase .text{
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+#showcase .text h2{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+/**** showcase*/
+
+
+
+#services{
+    color: white;
+    background-color: #55c18f;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#services h2{
+    padding: 20px;
+    font-size: 1.5em;
+}
+.service{
+    background-size: cover;
+    padding: 10px;
+    margin: 15px;
+}
+.service h3, .service p{
+    padding: 10px;
+}
+.service h3{
+    font-size: 1.4em;
+    border-bottom: 1px solid white;
+}
+.service.one{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),url(../html/dave-hoefler-jUQpok8_CNA-unsplash.jpg);
+}
+.service.two{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),url(../html/derek-mack-CcRZ4k3c6gA-unsplash.jpg);
+}
+.service.three{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),url(../html/veeterzy-sMQiL_2v4vs-unsplash.jpg);
+}
+.call-to-action{
+}
+.call-to-action a{
+    text-decoration: none;
+    color: white;
+    background-color: #55c18f;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 50px 0px;
+    transition: all 0.4s;
+}
+.call-to-action a:hover{
+    background-color: white;
+    color: #55c18f;
+
+}
+/**** services*/
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+footer .services ul{
+    list-style-type: none;
+}
+footer .services li{
+    padding: 5px 0px;
+}
+footer .services h5{
+    padding: 15px 0px;
+    font-size: 1.2em;
+}
+footer .services{
+    margin-bottom: 20px;
+}
+footer a{
+    color: white;
+}
+footer .contact-info p{
+    padding: 10px 0px;
+}
+footer .contact-form{
+    padding: 20px 0px;
+}
+footer .contact-form input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+}
+footer .contact-form button{
+    background-color: #55c18f;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    transition: box-shadow 0.4s;
+    margin: 10px 0px;
+    border: none;
+}
+
+
+
+/****  footer*/
+
+/*media queries*/
+@media screen and (min-width:750px){
+    header #logo{
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+    }
+    header nav{
+        display: inline-block;
+        width: 60%;
+    }
+    .service{
+        float: left;
+        width: 48.5%;
+        margin: 20px 0px;
+        padding: 20px;
+    }
+    .services-container{
+        max-width: 700px;
+        margin: auto;
+    }
+    .service.one{
+        width: 100%;
+        margin: 0px;
+    }
+    .service.two{
+        margin-right: 20px;
+    }
+    .services-container:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    footer .services, footer .contact-info{
+        display: inline-block;
+        width: 40%;
+    }
+    footer .contact-form input{
+        width: 70%;
+    }
+    footer .contact-form button{
+        margin-left: 20px;
+    }
+}

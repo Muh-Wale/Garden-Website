@@ -1,0 +1,292 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #edeff0;
+}
+header{
+    background-color: white;
+}
+header a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+header #logo{
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+header nav li{
+    display: inline-block;
+}
+
+header nav a{
+    transition: background-color 0.4s;
+}
+header nav a:hover{
+    background-color: rgba(0,0,0,.1);
+}
+header .active{
+    background-color: rgba(0,0,0,.1);
+}
+/* *** header*/
+
+#intro{
+    min-height: 400px;
+    background-image: url(../Images/pexels.jpg);
+    background-size: cover;
+}
+.intro-text{
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+.intro-text h2{
+    padding: 15px;
+    color: white;
+    background-color: rgba(0,0,0,.3);
+}
+.intro-text h3{
+    padding: 10px;
+    color: white;
+    background-color: rgba(0,0,0,.3);
+} 
+.intro-text .call-to-action a{
+    background-color: #55c18f;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    margin: 20px 0px 50px;
+    text-decoration: none;
+    transition: box-shadow 0.4s;
+}
+.intro-text .call-to-action a:hover{
+    box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+}
+/***  intro*/
+#welcome{
+    background-color: #55c18f;
+    color: white;
+    padding-bottom: 50px;
+}
+#welcome h2{
+    text-align: center;
+    padding: 15px;
+}
+#welcome p{
+    padding: 10px;
+}
+.services-container, .works-container{
+    max-width: 700px;
+    margin: 10px auto;
+}
+.service{
+    margin: 20px 10px;
+    text-align: center;
+}
+.service-title{
+    padding: 15px; 
+    border-bottom: 2px solid white;
+    font-size: 1.4em;
+}
+.work{
+    height: 250px;
+    margin: 20px 10px;
+    background-size: cover;
+    position: relative;
+}
+.work.one{
+    background-image: url(../Images/Fall.jpg);
+}
+.work.two{
+    background-image: url(../Images/Lawn\ care1.jpg);
+}
+.work.three{
+    background-image: url(../Images/alex-flash-Othnl_IkmPU-unsplash.jpg);
+}
+.work.four{
+    background-image: url(../Images/Plant\ and\ mulches1.jpg);
+}
+.work-title{
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/****  Welcome*/
+
+#blog{
+    text-align: center;
+}
+#blog h2{
+    padding: 15px;
+}
+#blog .call-to-action{
+    margin: 10px 0px 20px;
+}
+#blog .call-to-action a,.article-button a{
+    background-color: #55c18f;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    transition: box-shadow 0.4s;
+}
+#blog .call-to-action a:hover,.article-button a:hover{
+    box-shadow: 2px 2px 15px rgba(0,0,0,.2);   
+}
+.articles-container{
+    max-width: 700px;
+    margin: auto;
+}
+.article{
+    margin: 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
+}
+.article-date{
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+.article-title{
+    padding: 15px;
+}
+.article-text{
+    padding: 0px 15px 10px;
+}
+.article-button{
+   width: 50%;
+   margin: auto;
+}
+.article-button a{
+    margin: 20px;
+}
+
+/**** blog*/
+
+#testimonials{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#testimonials h2{
+    padding: 15px;
+    font-size: 1.5em
+}
+#testimonials h3{
+    padding: 10px 15px;
+    font-size: 1.4em;
+}
+.testimonial{
+    margin: 20px;
+    padding: 10px;
+}
+.testimonial img{
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    padding: 10px 0px;
+} 
+
+/**** testimonials*/
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+footer .services ul{
+    list-style-type: none;
+}
+footer .services li{
+    padding: 5px 0px;
+}
+footer .services h5{
+    padding: 15px 0px;
+    font-size: 1.2em;
+}
+footer .services{
+    margin-bottom: 20px;
+}
+footer a{
+    color: white;
+}
+footer .contact-info p{
+    padding: 10px 0px;
+}
+footer .contact-form{
+    padding: 20px 0px;
+}
+footer .contact-form input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+}
+footer .contact-form button{
+    background-color: #55c18f;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    transition: box-shadow 0.4s;
+    margin: 10px 0px;
+    border: none;
+} 
+
+/****  footer*/
+
+/*media queries*/
+
+@media screen and (min-width:750px){
+    header #logo{
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+    }
+    header nav{
+        display: inline-block;
+        width: 60%;
+    }
+    #intro{
+        height: 500px;
+    }
+    .intro-text{
+        top: 200px;
+    }
+    .services-container{
+        max-width: 500px;
+    }
+    .works-container .work{
+        display: inline-block;
+        width: 46%;
+    }
+    #blog .article, .testimonial{
+        float: left;
+        width: 44%;
+    }
+    #blog .articles-container::after, #testimonials .testimonials-container:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    footer .services, footer .contact-info{
+        display: inline-block;
+        width: 40%;
+    }
+    footer .contact-form input{
+        width: 70%;
+    }
+    footer .contact-form button{
+        margin-left: 20px;
+    }
+}

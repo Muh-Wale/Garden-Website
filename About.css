@@ -1,0 +1,259 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #edeff0;
+}
+header{
+    background-color: white;
+}
+header a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+header #logo{
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+header nav li{
+    display: inline-block;
+}
+
+header nav a{
+    transition: background-color 0.4s;
+}
+header nav a:hover{
+    background-color: rgba(0,0,0,.1);
+}
+header .active{
+    background-color: rgba(0,0,0,.1);
+}
+/* *** header*/
+
+#showcase{
+    height: 250px;
+    background-image: url(../Images/pexels.jpg);
+    background-size: cover;
+    position: relative;
+}
+#showcase .text{
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+#showcase .text h2{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+/**** showcase*/
+
+#few-words-about-us .words-container{
+    max-width: 500px;
+    margin: auto;
+}
+.words{
+    text-align: center;
+    margin: 20px 0px 50px;
+}
+.words-container h3, .words-container p{
+    padding: 10px;
+}
+.call-to-action{
+    text-align: center;
+}
+.call-to-action a{
+    display: inline-block;
+    padding: 15px 10px;
+    margin: 15px 0px;
+    color: #fff;
+    background-color: #55c18f;
+    text-decoration: none;
+    transition: box-shadow 0.4s;
+}
+.call-to-action a:hover{
+    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
+}
+/**** few-words-about-us*/
+
+#history{
+    background-color: white;
+    text-align: center;
+}
+#history h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 30px;
+}
+.event{
+    margin: 5px;
+}
+.event p{
+    padding: 10px;    
+}
+.event-date{
+    color: #55c18f;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.event-title{
+    color: #55c18f;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+/****history*/
+
+#our-team{
+    text-align: center;
+    padding-bottom: 50px;
+}
+#our-team h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 30px;
+}
+.member{
+    margin: 15px;
+    padding: 5px;
+    padding-bottom: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+}
+.member img{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 50%;
+}
+/**** our-team*/
+
+#faq{
+    background-color: white;
+}
+#faq h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+.faq{
+    margin: 10px;
+}
+.faq p{
+    padding: 5px;
+}
+.faq .q{
+    font-style: italic;
+    color: #55c18f;
+    font-weight: bold;
+}
+.faq span{
+    font-size: 1.2em;
+    padding-right: 5px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+footer .services ul{
+    list-style-type: none;
+}
+footer .services li{
+    padding: 5px 0px;
+}
+footer .services h5{
+    padding: 15px 0px;
+    font-size: 1.2em;
+}
+footer .services{
+    margin-bottom: 20px;
+}
+footer a{
+    color: white;
+}
+footer .contact-info p{
+    padding: 10px 0px;
+}
+footer .contact-form{
+    padding: 20px 0px;
+}
+footer .contact-form input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+}
+footer .contact-form button{
+    background-color: #55c18f;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    transition: box-shadow 0.4s;
+    margin: 10px 0px;
+    border: none;
+}
+
+/****  footer*/
+
+/*media queries*/
+@media screen and (min-width:750px){
+    header #logo{
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+    }
+    header nav{
+        display: inline-block;
+        width: 60%;
+    }
+    .event, .member, .faq{
+        float: left;
+        width: 45%;
+        margin: 2%;
+    }
+    .events-container:after, .members-container:after, .faq-container:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .call-to-action{
+        clear: both;
+    }
+    footer .services, footer .contact-info{
+        display: inline-block;
+        width: 40%;
+    }
+    footer .contact-form input{
+        width: 70%;
+    }
+    footer .contact-form button{
+        margin-left: 20px;
+    }
+}
